@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -84,5 +85,15 @@ public class Main {
         var boxerTwo = 82.7;
         System.out.println(boxerTwo - boxerOne);
         System.out.println(boxerTwo % boxerOne);
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        var totalHours = 640;
+        var quantityEmployees = totalHours / 8;
+        System.out.println("Всего сотрудников в компании - " + quantityEmployees + " человек");
+        quantityEmployees = quantityEmployees + 94;
+        var totalHours2 = quantityEmployees * 8;
+        System.out.println("Если в компании работает " + quantityEmployees + " человека, то всего " + totalHours2 + " часа работы может быть поделено между сотрудниками");
     }
 }
